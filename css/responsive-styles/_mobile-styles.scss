@@ -1,0 +1,130 @@
+@import "../variables";
+
+//----------------------------- Responsive Styles -------------------------//
+@mixin mobile {
+  @media (max-width: $small-device-width) {
+    .navbar {
+      height: 50px;
+      padding: 5px 10px;
+      .logo-div {
+        .logo {
+          font-size: 20px;
+        }
+      }
+      .navbar-title-div {
+        display: none;
+      }
+      .write-an-alert {
+        display: none;
+      }
+    }
+    .icon-container {
+      z-index: 1;
+      box-sizing: border-box;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      top: 40px;
+      padding: 5px 10px;
+      background-color: darkmagenta;
+      button {
+        padding: 5px 10px;
+        background-color: darkmagenta;
+        border: 1px solid transparent;
+        transition: 0.1s;
+        &:active {
+          background-color: rgb(173, 0, 173);
+        }
+        .icon {
+          color: white;
+        }
+      }
+      .write-an-alert-mobile {
+        display: block;
+        button {
+          border: 1px solid transparent;
+          padding: 10px;
+          font-family: "Poppins", sans-serif;
+          color: white;
+          letter-spacing: 2px;
+          font-size: 12px;
+          font-weight: 500;
+          background-color: inherit;
+          &:hover {
+            border: unset;
+            cursor: unset;
+          }
+          &:active {
+            transform: unset;
+            border: unset;
+            background-color: rgb(173, 0, 173);
+          }
+        }
+      }
+    }
+    //--------- Aside section mobile styles ---------//
+    .sidebar-calendar-nav {
+      position: static;
+      width: 100%;
+      box-sizing: border-box;
+      // padding: 30px;
+      margin-top: 80px;
+      overflow-y: scroll;
+      background-color: white;
+      border: none;
+      // display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // part below is toggled by js
+      &.display-none{
+        display: none;
+      }
+      //------------------ Sidebar items styles --------------//
+      .sidebar-item {
+        // background-color: green;
+        margin: 20px;
+        // padding: 15px;
+        .sidebar-item-header {
+          list-style-type: none;
+          .sidebar-item-date {
+            font-weight: 900;
+          }
+          .btn-sidebar-item-collapse {
+            padding: 5px 10px;
+            background-color: darkmagenta;
+            color: white;
+            border: none;
+          }
+          ul {
+            list-style-type: none;
+            .sidebar-item-child {
+              padding: 5px 10px;
+              // border-bottom: 1px solid darkmagenta;
+              &:hover {
+                background-color: darkmagenta;
+                color: white;
+              }
+            }
+          }
+        }
+        // &:hover {
+        //   border: 1px solid gray;
+        // }
+      }
+    }
+    //--------- Main section mobile styles ---------//
+    main {
+      box-sizing: border-box;
+      padding: 30px;
+      width: 100%;
+      margin-top: 80px;
+      // part below is toggled by js
+      &.display-none{
+        display: none;
+      }
+    }
+  }
+}

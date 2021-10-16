@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.navbar {
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.navbar .logo-div .logo {
+  display: inline-block;
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo-div .logo:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.navbar .navbar-title-div {
+  opacity: 0.5;
+}
+
+.navbar .navbar-title-div .navbar-title {
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.navbar .write-an-alert button {
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: inherit;
+}
+
+.navbar .write-an-alert button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.navbar .write-an-alert button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  border: 1px solid white;
+}
+
+.icon-container {
+  display: none;
+}
+
+main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  width: 85%;
+  margin: auto 0 auto auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+.sidebar-calendar-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 1px solid darkmagenta;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.sidebar-calendar-nav::-webkit-scrollbar {
+  width: 0;
+}
+
+.sidebar-calendar-nav ul {
+  list-style-type: none;
+}
+
+.sidebar-calendar-nav .sidebar-item {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+  width: 80%;
+}
+
+.sidebar-calendar-nav .sidebar-item .sidebar-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sidebar-calendar-nav .sidebar-item .sidebar-item-header .sidebar-item-date {
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.sidebar-calendar-nav .sidebar-item .sidebar-item-header .btn-sidebar-item-collapse {
+  padding: 5px 10px;
+  background-color: darkmagenta;
+  color: white;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.sidebar-calendar-nav .sidebar-item .sidebar-item-body.display-none {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    height: 50px;
+    padding: 5px 10px;
+  }
+  .navbar .logo-div .logo {
+    font-size: 20px;
+  }
+  .navbar .navbar-title-div {
+    display: none;
+  }
+  .navbar .write-an-alert {
+    display: none;
+  }
+  .icon-container {
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    top: 40px;
+    padding: 5px 10px;
+    background-color: darkmagenta;
+  }
+  .icon-container button {
+    padding: 5px 10px;
+    background-color: darkmagenta;
+    border: 1px solid transparent;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  .icon-container button:active {
+    background-color: #ad00ad;
+  }
+  .icon-container button .icon {
+    color: white;
+  }
+  .icon-container .write-an-alert-mobile {
+    display: block;
+  }
+  .icon-container .write-an-alert-mobile button {
+    border: 1px solid transparent;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: inherit;
+  }
+  .icon-container .write-an-alert-mobile button:hover {
+    border: unset;
+    cursor: unset;
+  }
+  .icon-container .write-an-alert-mobile button:active {
+    -webkit-transform: unset;
+            transform: unset;
+    border: unset;
+    background-color: #ad00ad;
+  }
+  .sidebar-calendar-nav {
+    position: static;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 80px;
+    overflow-y: scroll;
+    background-color: white;
+    border: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sidebar-calendar-nav.display-none {
+    display: none;
+  }
+  .sidebar-calendar-nav .sidebar-item {
+    margin: 20px;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header {
+    list-style-type: none;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header .sidebar-item-date {
+    font-weight: 900;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header .btn-sidebar-item-collapse {
+    padding: 5px 10px;
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header ul {
+    list-style-type: none;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header ul .sidebar-item-child {
+    padding: 5px 10px;
+  }
+  .sidebar-calendar-nav .sidebar-item .sidebar-item-header ul .sidebar-item-child:hover {
+    background-color: darkmagenta;
+    color: white;
+  }
+  main {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    margin-top: 80px;
+  }
+  main.display-none {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task manager</title>
+</head>
+
+<body>
+    <header>
+        <!-- 
+                -- Have to create navbar fixed page
+                -- Navbar will contain buttons to access to sidebar 
+            -->
+        <nav class="navbar">
+            <div class="logo-div">
+                <a href="#" class="logo">TASK MANAGER</a>
+            </div>
+            <div class="navbar-title-div">
+                <span class="navbar-title">Your daily to do`s</span>
+            </div>
+            <div class="write-an-alert">
+                <button>Create an alert +</button>
+            </div>
+        </nav>
+        <div class="icon-container">
+            <button id="btn-sidebar-calendar"><i class="icon far fa-calendar-alt fa-2x"></i></button>
+            <div class="write-an-alert-mobile">
+                <button>Create an alert +</button>
+            </div>
+        </div>
+    </header>
+    <!-- Have to create fixed sidebar that is collapsing into button on small screens.-->
+    <aside>
+        <div class="sidebar-calendar-nav display-none">
+            <ul class="sidebar-item item-1">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-2">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-3">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-4">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-5">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-6">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-7">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-8">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr style="width: 85%">
+            <ul class="sidebar-item item-9">
+                <li class="sidebar-item-header">
+                    <span class="sidebar-item-date">14.10.2021</span>
+                    <button class="btn-sidebar-item-collapse">▲</button>
+                </li>
+                <li>
+                    <ul class="sidebar-item-body">
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Done</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                        <li class="sidebar-item-child">
+                            <span class="task-1">video</span>
+                            <span class="task-1 state">Pending</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+
+        <!-- main content area -->
+        <p>Lorem, MENU MUNE MRNU MENU MENU MENU pisci tempora voluptates amet
+            dolorum,
+            autem blanditiis unde a consequatur eveniet, cupiditate nobis inventore. Animi maiores a deserunt dolorum
+            autem
+            maxime accusamus commodi velit nostrum, saepe molestias nemo nam? Optio, quod expedita dolores quaerat
+            dolorem
+            voluptatem blanditiis, iste voluptas ipsum eaque recusandae illum omnis sunt, totam suscipit animi et
+            ratione
+            neque. Voluptatibus placeat hic nobis iusto cupiditate sint, minus voluptatum nemo amet culpa excepturi
+            labore
+            reiciendis atque rem quos reprehenderit dicta ab consequatur, quas cumque eaque delectus? Error vitae
+            maiores ab
+            totam, facere accusamus explicabo eius at sint repudiandae praesentium voluptatibus architecto ducimus eaque
+            fugit amet nemo tenetur ipsa sed cumque. Enim soluta voluptatem adipisci consectetur iure nam, ea provident,
+            in
+            voluptatibus modi culpa. Animi, porro cum. Sequi libero in officia distinctio aut corrupti, perferendis
+            quidem?
+            Quod pariatur deleniti dignissimos quaerat cupiditate officiis repellat necessitatibus, hic natus quas
+            veniam
+            recusandae optio vitae distinctio consectetur ab numquam magni aliquid corrupti culpa quo! Magni iure saepe
+            aliquam. Deserunt tempora mollitia harum assumenda id, quisquam earum corrupti labore distinctio, quam in
+            quae
+            molestiae minima ipsam obcaecati, vitae neque quaerat eveniet vel. Temporibus harum expedita vero
+            voluptatibus
+            nostrum vitae ipsum molestiae, optio numquam. Impedit dicta adipisci, sapiente quibusdam vero iusto incidunt
+            eligendi obcaecati quos unde laboriosam nam exercitationem in odio error, vel delectus dolor temporibus
+            quasi
+            earum voluptates necessitatibus, voluptatibus officiis doloremque? Debitis quis, aperiam facere dolorum
+            consectetur distinctio ducimus, maiores ratione repellendus quasi voluptatem amet atque pariatur molestiae
+            ipsum
+            ab fugit repellat eaque. Quisquam?
+        </p>
+    </main>
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

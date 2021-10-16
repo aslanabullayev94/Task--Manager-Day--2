@@ -1,0 +1,139 @@
+
+@import "variables";
+@import "responsive-styles/mobile-styles";
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+//--------- Header section desktop styles ---------//
+.navbar {
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  .logo-div {
+    .logo {
+      display: inline-block;
+      font-family: "Grechen Fuemen", cursive;
+      font-size: 32px;
+      text-decoration: none;
+      color: inherit;
+      //   text-shadow: 1px 1px 3px blue;
+      &:active {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .navbar-title-div {
+      opacity: 0.5;
+    .navbar-title {
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+  }
+  .write-an-alert {
+    button {
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      letter-spacing: 2px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: inherit;
+      &:hover {
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      &:active {
+        transform: scale(0.9);
+        border: 1px solid white;
+      }
+    }
+  }
+}
+.icon-container {
+  display: none;
+}
+
+//--------- Main section desktop styles ---------//
+main {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 85%;
+  margin: auto 0 auto auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+
+//------------------------------- Aside section desktop styles ----------------------------//
+.sidebar-calendar-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  box-sizing: border-box;
+  border-right: 1px solid darkmagenta;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+  //------------------ Sidebar items styles --------------//
+  .sidebar-item {
+    font-family: "Poppins", sans-serif;
+    margin: 20px 0;
+    width: 80%;
+    .sidebar-item-header {
+      display: flex;
+      justify-content: space-evenly;
+
+      .sidebar-item-date {
+        letter-spacing: 2px;
+        font-weight: 900;
+      }
+      .btn-sidebar-item-collapse {
+        padding: 5px 10px;
+        background-color: darkmagenta;
+        color: white;
+        border: none;
+        font-weight: 900;
+        cursor: pointer;
+      }
+    }
+    .sidebar-item-body {
+      &.display-none{
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile;
